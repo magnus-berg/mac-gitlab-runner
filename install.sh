@@ -7,7 +7,7 @@
 # Pre Steps
 # 1. Install Mac OS
 # 2. Run the following command in a terminal:
-# /bin/bash -c "$(curl -fsSL https://github.com/magnus-berg/mac-gitlab-runner/install.sh)"
+/bin/bash -c "$(curl -fsSL https://github.com/magnus-berg/mac-gitlab-runner/blob/main/install.sh)"
 
 
 link_volume() {
