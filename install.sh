@@ -4,12 +4,6 @@
 # Gitlab Runner Installer #
 ###########################
 
-# Pre Steps
-# 1. Install Mac OS
-# 2. Run the following command in a terminal:
-/bin/bash -c "$(curl -fsSL https://github.com/magnus-berg/mac-gitlab-runner/blob/main/install.sh)"
-
-
 link_volume() {
     # Get the list of external disk identifiers
     external_disks=($(diskutil list external | awk '/disk[0-9]/{print $NF}' | grep 'disk' | sort -u))
@@ -63,7 +57,7 @@ link_volume
 
 # Install homebrew
 echo "Install homebrew"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercon<tent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install Gitlab Runner, Tart and Gitlab Tart Executor
 echo "Install gitlab-runner, tart and gitlab-tart-executor, iTerm"
