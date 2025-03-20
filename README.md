@@ -10,7 +10,7 @@ We except you to have an external disk connected to store the tart images.
 
 ### Run the following command on your new Mac:
 ```
-/bin/bash -c "$(curl -fsSL https://gitlab.com/toptracer/toptracer-community-client/mac-gitlab-runner/install.sh)"
+/bin/bash -c "$(curl -fsSL https://github.com/magnus-berg/mac-gitlab-runner/install.sh)"
 ```
 
 ### The following will be installed:
