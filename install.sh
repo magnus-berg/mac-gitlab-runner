@@ -80,11 +80,12 @@ sudo brew services start gitlab-runner
 
 echo "Setup system-updates"
 sudo sh -c "cat <<EOF > /Library/Scripts/mac-update.sh
-#!usr/bin/env sh
-sudo -u $CURRENT_USER brew update
-sudo -u $CURRENT_USER brew upgrade
-sudo -u $CURRENT_USER brew cleanup
-sudo -u $CURRENT_USER tart pull ghcr.io/cirruslabs/macos-sequoia-xcode:latest
+#!/usr/bin/env sh
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+sudo -u admin brew update
+sudo -u admin brew upgrade
+sudo -u admin brew cleanup
+sudo -u admin tart pull ghcr.io/cirruslabs/macos-sequoia-xcode:latest
 softwareupdate -ia 
 shutdown -r now
 EOF"
